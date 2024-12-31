@@ -1,0 +1,33 @@
+
+is_real_estate_post -> Nhằm phân biệt với các bài viết spam, mặc định None
+area_LLM -> diện tích, mặc định None
+bedroom_LLM -> số phòng ngủ, mặc định None
+wc_LLM -> số phòng vệ sinh, mặc định None
+count_conveniences -> số tiện ích xung quanh, mặc định None
+alleyway_property -> trong hẻm, mặc định là None
+under_mortgage -> có đang bị thế chấp không, mặc định None -> thể hiện sự ownership
+residential_purpose -> Chắc chắn nằm trên đất thổ cư, mặc định None
+furnished -> bán nhà có bán kèm nột thất không, mặc định None
+has_lowerlevel -> tầng hầm, default None
+has_rooftop -> sân thượng, mặc định None
+numbers_of_floors -> số tầng, không tính tầng trệt, sân thượng, mặc định 0
+street_name -> tên đường, mặc định None
+
+
+You are a data scientist, and I want to extract useful data from a description in a Vietnamese real estate post.
+I’ll provide you with that description, and you must only return the keys and values in JSON format without any introduction.
+The response mustn't contain any explanation.
+The keys contain those properties: is_real_estate_post, area_LLM, bedroom_LLM, total_room_LLm, wc_LLM, count_conveniences, alleyway_property, under_mortgage, residential_purpose, furnished, has_lowerlevel, has_rooftop, numbers_of_floors, street_name.
+is_real_estate_post is boolean value (1/0), default is null.
+area_LLM is a float number, converted into m2 unit, greater than 0, default is null.
+bedroom_LLM is an integer number, greater than 0, default is null.
+wc_LLM is an integer number, greater than 0, default is null.
+count_conveniences is an integer number, greater or equal 0, default is 0. The list of convenience-related words is defined as:a = ('school', 'hospital', 'supermarket', 'shopping center', 'market', 'mall', 'mart').For each word from this list that appears in the description, increment the count_conveniences by 1.If none of the words from the list are found in the description, then the value of count_conveniences remains unchanged
+Alleyway_property is boolean value (1/0), default is null. 
+under_mortgage is boolean value (1/0), default is null.
+residential_purpose is boolean value (1/0), default value is null, it ensures the buyer have full ownership rights for residential purposes.
+has_basement, has_rooftop, furnished are boolean values (1/0), default is null. 
+numbers_of_floors is an integer number, greater or equal 0, default is 0, doesn't include the ground floor and rooftoop floor.
+street_name is a string, default is null, it represents the name of the street where the property is located in Ho Chi Minh City, Viet Name.
+If the description doesn't contain enough information to determine the value of a property, the corresponding value in the dictionary should be set to default value. 
+This is the description in Vietnamese:
