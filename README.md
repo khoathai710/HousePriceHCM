@@ -15,16 +15,7 @@
   * **6_1_result_heat_map_geospatial.html, 6_2_result_heat_map_house_address**: chứa heatmap thể hiện sự phân bố của nhà ở theo địa chỉ của ngôi nhà. 
   * **8_1_noi_dung_cac_buoi_hop.pdf**: chứa nội dung các buổi họp nhóm
   * **8_2_dong_gop_cua_cac_thanh_vien**: chứa thông tin về đóng góp của các thành viên trong nhóm
-### 1.2. Thành viên nhóm
 
-* Vũ Đăng Khôi - 22280049 - Nhóm trưởng
-* Trảo An Huy - 22280041
-* Đặng Lê Khiêm - 22280045
-* Thái Anh Khoa - 22280048
-### 1.3. Đóng góp của các thành viên
-Đóng góp của các thành viên nhóm được thể hiện trong file **8_2_dong_gop_cua_cac_thanh_vien.pdf**
-### 1.4. Nội dung các buổi họp
-Nội dung các buổi họp được thể hiện trong file **8_1_noi_dung_cac_buoi_hop.pdf**
 # 2. Tóm tắt quá trình thực hiện
 <div style="text-align: center;">
     <img src="https://github.com/KhiemDangLe/Final-Project/blob/main/image/image_for_craw_data/quy_trinh.png?raw=true" width="70"/>
