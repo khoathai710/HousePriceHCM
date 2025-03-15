@@ -41,7 +41,7 @@ Trang web là trang web tĩnh. Phân loại các bài đăng được thể hi�
 * Thư viện Selenium
 * Thư viện BeautifulSoup và requests
 ### 2.1.5. Kết quả
-Dữ liệu thu được sẽ lưu trữ ở đường dẫn sau: https://raw.githubusercontent.com/KhiemDangLe/Final-Project/main/DataFolder/2_raw_data_from_post.csv. Bao gồm các cột: 
+Dữ liệu thu được sẽ lưu trữ ở đường dẫn sau: https://github.com/khoathai710/HousePriceHCM/blob/master/DataFolder/2_raw_data_from_post.csv. Bao gồm các cột: 
 * page_link: đường dẫn của bài viết
 * title: tiêu đề bài viết
 * article_id: mã định danh bài viết
@@ -74,7 +74,7 @@ Dữ liệu thu được sẽ lưu trữ ở đường dẫn sau: https://raw.gi
 * Load dữ liệu nhận được vào dataframe
 * Thực hiện tải kết quả nhận được vào LLM vào các file
 ### 2.3.4 Kết quả
-Dữ liệu thô sau khi craw data, có thể truy cập ở đường dẫn sau: https://github.com/KhiemDangLe/Final-Project/blob/main/DataFolder/3_raw_data_extracted_by_LLM.csv
+Dữ liệu thô sau khi craw data, có thể truy cập ở đường dẫn sau: https://github.com/khoathai710/HousePriceHCM/blob/master/DataFolder/3_raw_data_extracted_by_LLM.csv
 
 ## 2.4. Quá trình ETL
 ### 2.4.1 Sơ Lược Về ETL:
@@ -98,7 +98,7 @@ Quy trình ETL đóng vai trò quan trọng trong việc chuyển đổi dữ li
   
 **Load Dữ liệu vào file merged data.csv**
 ### 2.4.4 Kết quả:
-* file merged_data: https://github.com/KhiemDangLe/Final-Project/blob/main/DataFolder/4_raw_data_merged.csv
+* file merged_data: https://github.com/khoathai710/HousePriceHCM/blob/master/DataFolder/4_raw_data_merged.csv
   -   0   page_link            ject 
   -   1   title                
   -   2   article_id           
@@ -129,8 +129,8 @@ Quy trình ETL đóng vai trò quan trọng trong việc chuyển đổi dữ li
   -   27  price                
   -   28  price_per_m2  
 * 2 file tọa độ chứa mã bài dăng và tọa độ 
-  - https://github.com/KhiemDangLe/Final-Project/blob/main/DataFolder/7_coordinates_by_street_name_1_5000.csv 
-  -  https://github.com/KhiemDangLe/Final-Project/blob/main/DataFolder/8_coordinates_by_street_nam_5000_end.csv
+  -  https://github.com/khoathai710/HousePriceHCM/blob/master/DataFolder/7_coordinates_by_street_name_1_5000.csv
+  -  https://github.com/khoathai710/HousePriceHCM/blob/master/DataFolder/8_coordinates_by_street_nam_5000_end.csv
   
 ## 2.4. Tiền xử lý dữ liệu và phân tích dữ liệu
 ### 2.4.1. Sơ lược về tiền xử lý dữ liệu và phân tích khám phá dữ liệu
@@ -150,7 +150,7 @@ Thực hiện visualize để miêu tả dữ liệu
 
 ### 2.4.4. Kết quả
 * Ta sẽ nhận được bộ dữ liệu sạch, chuẩn hóa và nhất quán đảm bảo dữ liệu đã sẵn sàng cho các mô hình phân tích và học máy. Cũng như hiểu biết chi tiết về dữ liệu, thông qua các phân tích thống kê và trực quan, giúp định hướng cho việc lựa chọn và xây dựng mô hình phù hợp.
-* Link github: https://github.com/KhiemDangLe/Final-Project/blob/main/DataFolder/5_preprocessed_data.csv
+* Link github: https://github.com/khoathai710/HousePriceHCM/blob/master/DataFolder/5_preprocessed_data.csv
 
 ## 2.5. Tối ưu từng mô hình
 Mỗi thành viên nhóm sẽ chịu trách nhiệm tìm hiểu, áp dụng, tối ưu các mô hình sau:
@@ -163,7 +163,7 @@ Sau khi tối ưu các mô hình, nhóm sẽ so sánh các mô hình dựa trên
 # 3. Sản phẩm
 Sản phẩm sau khi kết thúc đồ án bao gồm:
 * Heatmap thể hiện sự phân bố của nhà ở theo địa chỉ của ngôi nhà. Địa chỉ của ngôi nhà là tên đường được trích xuất bằng mô hình LLM từ mô tả bài đăng. File heatmap có thể truy cập tại địa chỉ sau:
-  * https://khiemdangle.github.io/Final-Project/6_1_result_heat_map_geospatial.html
-  * https://khiemdangle.github.io/Final-Project/6_2_result_heat_map_house_address.html
+  * https://github.com/khoathai710/HousePriceHCM/blob/master/6_1_result_heat_map_geospatial.html
+  * https://github.com/khoathai710/HousePriceHCM/blob/master/6_2_result_heat_map_house_address.html
 * Website dữ đoán giá nhà dựa trên các thông tin người dùng nhập vào với mô hình có kết qủa tốt nhầt là mô hình HistGradientBoostingRegressor. Website được triển khai tại: 
   * https://huggingface.co/spaces/Khoa710200/DS_2024
